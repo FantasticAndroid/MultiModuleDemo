@@ -9,12 +9,12 @@ plugins {
 
 android {
     namespace = "com.multi.module"
-    compileSdk = 34
+    compileSdk = rootProject.extra["compileSDK"] as Int
 
     defaultConfig {
         applicationId = "com.multi.module"
-        minSdk = 28
-        targetSdk = 34
+        minSdk = rootProject.extra["minSDK"] as Int
+        targetSdk = rootProject.extra["targetSDK"] as Int
         versionCode = 1
         versionName = "1.0"
 
@@ -59,6 +59,8 @@ android {
 }
 
 dependencies {
+
+    implementation(project(":core:common"))
 
     implementation(libs.dagger.hilt)
     kapt(libs.dagger.hilt.kapt)

@@ -15,4 +15,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "MultiModuleDemo"
 include(":app")
- 
+include(":core:common")

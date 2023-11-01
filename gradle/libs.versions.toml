@@ -12,6 +12,8 @@ dagger-hilt = "2.48.1"
 retrofit-api = "2.9.1"
 okhttp3 = "4.10.0"
 glide = "4.14.2"
+appcompat = "1.6.1"
+material = "1.10.0"
 
 
 [libraries]
@@ -39,6 +41,8 @@ okhttp3 = {group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okhtt
 
 glide = {group = "com.github.bumptech.glide", name = "glide", version.ref = "glide"}
 glide-compiler = {group = "com.github.bumptech.glide", name = "compiler", version.ref = "glide"}
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 
 
 [plugins]
@@ -46,6 +50,7 @@ com-android-application = { id = "com.android.application", version.ref = "agp" 
 org-jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "org-jetbrains-kotlin-android" }
 org-jetbrains-kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "org-jetbrains-kotlin-android" }
 com-google-dagger-hilt = { id = "com.google.dagger.hilt.android", version.ref = "dagger-hilt" }
+com-android-library = { id = "com.android.library", version.ref = "agp" }
 
 [bundles]
 
