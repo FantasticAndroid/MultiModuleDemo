@@ -9,7 +9,7 @@ lifecycle-runtime-ktx = "2.6.2"
 activity-compose = "1.8.0"
 compose-bom = "2023.10.01"
 dagger-hilt = "2.48.1"
-retrofit-api = "2.9.1"
+retrofit-api = "2.9.0"
 okhttp3 = "4.10.0"
 glide = "4.14.2"
 appcompat = "1.6.1"
@@ -36,7 +36,7 @@ dagger-hilt = {group = "com.google.dagger", name ="hilt-android" , version.ref =
 dagger-hilt-kapt = {group = "com.google.dagger", name ="hilt-android-compiler", version.ref = "dagger-hilt"}
 
 retrofit-api = {group="com.squareup.retrofit2", name="retrofit", version.ref = "retrofit-api"}
-retrofit-gson-converter = {group="com.squareup.retrofit2", name="converter-gson", version.ref = "retrofit-api"}
+retrofit-gsonconverter = {group="com.squareup.retrofit2", name="converter-gson", version.ref = "retrofit-api"}
 okhttp3 = {group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okhttp3"}
 
 glide = {group = "com.github.bumptech.glide", name = "glide", version.ref = "glide"}

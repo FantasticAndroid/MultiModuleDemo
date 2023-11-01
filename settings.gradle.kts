@@ -16,3 +16,6 @@ dependencyResolutionManagement {
 rootProject.name = "MultiModuleDemo"
 include(":app")
 include(":core:common")
+include(":core:network")
+include(":feature:movielist")
+include(":feature:moviedetail")
