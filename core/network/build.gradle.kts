@@ -44,6 +44,8 @@ dependencies {
     implementation(libs.okhttp3)
     implementation(libs.retrofit.api)
     implementation(libs.retrofit.gsonconverter)
+    implementation(libs.okhttpprofiler)
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.test.ext.junit)
     androidTestImplementation(libs.espresso.core)
