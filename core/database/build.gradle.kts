@@ -8,7 +8,7 @@ plugins {
 }
 
 android {
-    namespace = "com.multi.movielist.data"
+    namespace = "com.multi.database"
     compileSdk = rootProject.extra["compileSDK"] as Int
 
     defaultConfig {
@@ -37,12 +37,13 @@ android {
 }
 
 dependencies {
+
     implementation(libs.dagger.hilt)
     kapt(libs.dagger.hilt.kapt)
 
-    implementation(project(":feature:movielist:domain"))
-    implementation(project(":core:network"))
-    implementation(project(":core:database"))
+    implementation(libs.room.runtime)
+    implementation(libs.room.ktx)
+    kapt(libs.room.kapt)
 
     implementation(libs.core.ktx)
     implementation(libs.appcompat)

@@ -15,6 +15,7 @@ glide = "4.14.2"
 appcompat = "1.6.1"
 material = "1.10.0"
 okhttpprofiler = "1.0.8"
+room = "2.6.0"
 
 
 [libraries]
@@ -35,6 +36,10 @@ material3 = { group = "androidx.compose.material3", name = "material3" }
 
 dagger-hilt = {group = "com.google.dagger", name ="hilt-android" , version.ref = "dagger-hilt"}
 dagger-hilt-kapt = {group = "com.google.dagger", name ="hilt-android-compiler", version.ref = "dagger-hilt"}
+
+room-runtime = {group = "androidx.room", name ="room-runtime" , version.ref = "room"}
+room-ktx = {group = "androidx.room", name ="room-ktx" , version.ref = "room"}
+room-kapt = {group = "androidx.room", name ="room-compiler", version.ref = "room"}
 
 retrofit-api = {group="com.squareup.retrofit2", name="retrofit", version.ref = "retrofit-api"}
 retrofit-gsonconverter = {group="com.squareup.retrofit2", name="converter-gson", version.ref = "retrofit-api"}
