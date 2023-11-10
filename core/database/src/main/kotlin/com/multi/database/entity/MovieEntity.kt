@@ -25,8 +25,8 @@ data class MovieEntity(
     val releaseDate: String? = null,
 
     @ColumnInfo(COLUMN_MOVIE_ID)
-    @PrimaryKey(autoGenerate = false)
-    val id: Int,
+    @PrimaryKey(autoGenerate = true)
+    val id: Int = 0,
 
     @ColumnInfo("adult")
     val adult: Boolean?,

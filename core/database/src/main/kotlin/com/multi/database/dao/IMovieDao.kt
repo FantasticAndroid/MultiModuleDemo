@@ -5,6 +5,7 @@ import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.Query
 import com.multi.database.entity.MovieEntity
+import kotlinx.coroutines.flow.Flow
 
 @Dao
 interface IMovieDao {
@@ -16,7 +17,7 @@ interface IMovieDao {
     suspend fun insertMovieList(movieEntityList: List<MovieEntity>)
 
     @Query("SELECT * FROM ${MovieEntity.TABLE_MOVIE}")
-    suspend fun getMovieList() : List<MovieEntity>
+    fun getMovieList(): Flow<List<MovieEntity>?>
 
     @Query("SELECT * FROM ${MovieEntity.TABLE_MOVIE} WHERE ${MovieEntity.COLUMN_MOVIE_ID} = :id")
     suspend fun getMovie(id:Int) : MovieEntity

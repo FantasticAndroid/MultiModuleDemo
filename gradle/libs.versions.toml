@@ -16,7 +16,10 @@ appcompat = "1.6.1"
 material = "1.10.0"
 okhttpprofiler = "1.0.8"
 room = "2.6.0"
-
+constraintlayout = "2.1.4"
+activity-ktx = "1.8.0"
+recyclerview = "1.3.2"
+cardview = "1.0.0"
 
 [libraries]
 core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
@@ -50,7 +53,14 @@ glide = {group = "com.github.bumptech.glide", name = "glide", version.ref = "gli
 glide-compiler = {group = "com.github.bumptech.glide", name = "compiler", version.ref = "glide"}
 appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
 
+livedata-ktx = { group = "androidx.lifecycle", name = "lifecycle-livedata-ktx", version.ref = "lifecycle-runtime-ktx" }
+viewmodel-ktx = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycle-runtime-ktx" }
+activity-ktx = { group = "androidx.activity", name = "activity-ktx", version.ref = "activity-ktx" }
+
+recyclerview = {group = "androidx.recyclerview", name= "recyclerview", version.ref = "recyclerview"}
+cardview = {group = "androidx.cardview", name = "cardview", version.ref = "cardview"}
 
 [plugins]
 com-android-application = { id = "com.android.application", version.ref = "agp" }

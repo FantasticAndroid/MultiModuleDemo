@@ -61,6 +61,8 @@ android {
 dependencies {
 
     implementation(project(":core:common"))
+    implementation(project(":feature:movielist:ui"))
+    //implementation(project(":feature:moviedetail"))
 
     implementation(libs.dagger.hilt)
     kapt(libs.dagger.hilt.kapt)

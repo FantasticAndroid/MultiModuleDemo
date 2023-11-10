@@ -14,7 +14,7 @@
         android:theme="@style/Theme.MultiModuleDemo"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".SplashActivity"
             android:exported="true"
             android:theme="@style/Theme.MultiModuleDemo">
             <intent-filter>

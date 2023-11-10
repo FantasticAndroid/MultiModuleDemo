@@ -4,5 +4,5 @@ import com.core.network.services.movieservice.model.MovieListResponse
 
 interface IMovieDataSource {
 
-    suspend fun getMovieList(query:String) : MovieListResponse
+    suspend fun getMovieList(query:String) : MovieListResponse?
 }
